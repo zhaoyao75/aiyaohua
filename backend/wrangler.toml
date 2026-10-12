@@ -1,0 +1,8 @@
+name = "aiyaohua-images"
+main = "worker.mjs"
+compatibility_date = "2026-10-12"
+
+[vars]
+ALLOWED_ORIGIN = "https://zhaoyao75.github.io"
+IMAGE_MODEL = "gpt-image-1.5"
+# Set OPENAI_API_KEY and GENERATE_ACCESS_CODE as secrets, never here.
