@@ -5,7 +5,9 @@
 ## 页面内容
 - 响应式首页和移动端导航
 - 原创 SVG 风格示意画廊、分类筛选、详情弹窗
-- 浏览器本地提示词组合与复制（不调用 AI，不生成图片）
+- 浏览器本地提示词组合与复制
+- AI 绘画表单：提示词、风格、比例、生成状态、图片下载
+- Cloudflare Worker 后端调用 OpenAI Images API；需要部署和配置密钥后才能真正生成图片
 - SEO 标题、描述、canonical、Open Graph、WebSite 结构化数据和 sitemap
 
 ## 发布到 GitHub Pages
@@ -21,3 +23,7 @@
 
 ## 编辑
 直接修改 index.html。插画为内嵌 SVG，不依赖外部图片或字体。更换域名时，同步更新 canonical、Open Graph URL、结构化数据及 sitemap。
+
+## 启用图片生成
+
+请按 [backend/README.md](backend/README.md) 部署后端并配置 `config.js`。前端不存放 API 密钥。接口未配置时会明确提示服务尚未启用；不展示伪造生成结果。AI 绘图 API 可能产生费用，与 GitHub Pages 托管费用分开。
